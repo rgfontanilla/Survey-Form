@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Nomiks Survey Form</h1>
+    <p class="description">Thank you for taking the time to help us improve the platform</p>
+    <form class="survey-form">
+        <label for="name-label">Name: <input id="name" type="text" placeholder="Enter your name" class="form-control" required /> </label>
+        <label for="email-label">Email:  <input id="email" placeholder="Enter your email" class="form-control" required></label>
+        <label for="number-labek">Age:<span class="clue">(optional)</span> <input id="number" type="number" class="form-control" placeholder="Age" min="13" max="120" /> </label>
+        <label>Which option best describes your current role?
+            <select>
+                <option value="">(select one)</option>
+                <option value="1" id="dropdown">Student</option>
+                <option value="2" id="dropdown">Full Time</option>
+                <option value="3" id="dropdown">Part Time</option>
+                <option value="4" id="dropdown">Prefer not to say</option>
+            </select>
+        </label>
+        <div class="form-group">Would you recommend Nomiks to a friend? 
+            <label for="rec1"><input type="radio" name="rec1" value="definitely" class ="radio"/>Definitely </label>
+            <label for="rec2"><input type="radio" name="rec1" value="maybe" class ="radio"/>Maybe</label>
+            <label for="rec3"><input type="radio" name="rec1" value="unsure" class ="radio"/>Not sure</label>
+        </div>
+        <div class="form-group">
+            <p>What is your favorite feature of Nomiks?</p>
+            <select class="form-control">
+                <option value="">Select an option</option>
+                <option value="1">Novels</option>
+                <option value="2">Comics</option>
+                <option value="3">Art section</option>
+                <option value="4">Community</option>
+            </select>
+        </label>
+        <div class="form-group">
+            <p>What would you like to see improved?<span class="clue">(Check all that apply)</span></p>
+            <label for="feature1"><input type="checkbox" name="feature1" value="front-end" class ="checkbox" />Novels</label>
+            <label for="feature2"><input type="checkbox" name="feature2" value="back-end" class ="checkbox" />Comics</label>
+            <label for="feature3" ><input type="checkbox" name="feature3" value="data-viz" class ="checkbox">Fan fictions</label>
+            <label for="feature4"><input type="checkbox" name="feature4" value="challenge" class ="checkbox">Short stories</label>
+            <label for="feature5"><input type="checkbox" name="feature5" value="open-source" class ="checkbox">Forums</label>
+            <label for="feature6"><input type="checkbox" name="feature6" value="help-rooms" class ="checkbox">Help setion</label>
+            <label for="feature7"><input type="checkbox" name="feature7" value="videos" class ="checkbox">Illustration</label>
+            <label for="feature8"><input type="checkbox" name="feature8" value="city-meetups" class ="checkbox">Stickers</label>
+            <label for="feature9"><input type="checkbox" name="feature9" value="Wiki" class ="checkbox">Artists/writers tipping</label>
+            <label for="feature10"><input type="checkbox" name="feature10" value="forum" class ="checkbox">Uploading</label>
+            <label for="feature11"><input type="checkbox" name="feature11" value="addl-courses" class ="checkbox">Interactions</label>
+        </div>
+        <br>
+        <div >
+        <p class="form-group">Any comments or suggestions?</p>
+        <textarea class="text-area">Enter your comment here... </textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>
